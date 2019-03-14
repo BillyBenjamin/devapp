@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "jQuery": "^1.7.4",
     "qunit": "^2.9.2",
     "uuidjs": "^4.2.1"
   }
