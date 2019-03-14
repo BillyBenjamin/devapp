@@ -1,4 +1,14 @@
 class CompoTaskList {
+    /**
+     * @summary Composant qui affiche une liste de tâches
+     * getElement, retourne l'élément
+     * @param {*} param Objet de paramétrage 
+     * @example 
+     * let tasks = new CompoTaskList({
+     * element: document.getElementById('tasks'),
+     * taskList: list
+});
+     */
     constructor(param) {
         this.param = param;
     }
