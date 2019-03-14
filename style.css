@@ -1,0 +1,7 @@
+div{
+    color:red;
+    display :flex;
+    font-size:2em;
+    width:100%;
+    justify-content: space-between;
+}
