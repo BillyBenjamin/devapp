@@ -1,5 +1,6 @@
 class CompoTaskList {
     /**
+     * @class
      * @summary Composant qui affiche une liste de tâches
      * getElement, retourne l'élément
      * @param {*} param Objet de paramétrage 
@@ -12,15 +13,15 @@ class CompoTaskList {
     constructor(param) {
         this.param = param;
     }
-
+    /** Retourne la liste */
     getTaskList() {
         return this.param.taskList;
     }
-
+    /** Retourne l'élément */
     getElement() {
         return this.param.element;
     }
-
+    /**Permet d'afficher toute les tâches de la liste */
     render() {
         let children = [];
         if (this.param.taskList) {
@@ -30,7 +31,8 @@ class CompoTaskList {
                 this.param.element.appendChild(item);
                 new CompoTask({
                     task: this.param.taskList.getTasks()[i],
-                    element: item}).render();
+                    element: item
+                }).render();
             }
         }
     }
